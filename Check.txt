@@ -1,0 +1,6 @@
+If you attach a string to search filter on ng-repeat directive, it would search for that string in all rows. If you 
+attach a function to search filter on ng-repeat directive, it implicitly calls the function for every repetition of 
+table row (or each employee model) passing the row data as an argument (item variable in our case). If the function 
+returns true, the row would be shown. Otherwise, false. If you specify "true" for the filter at ng-repeat directive 
+level, it would not work (as that should be done for each repeated tr).
+
